@@ -873,7 +873,7 @@
             }
             heProm.w.then((response) => {
                 if (response.ok) {
-                    let r2 = response;
+                    let r2 = response.clone();
                     if (heProm.c) {
                         r2 = response.clone();
                     }
